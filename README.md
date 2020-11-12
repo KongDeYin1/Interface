@@ -24,7 +24,7 @@
 * 根据输入情况，要在程序中做异常处理。
 
 **三、实验结果
-
+  https://github.com/KongDeYin1/Interface/blob/main/1.PNG
 **四、实验感想
 
 1.通过这次实验掌握Java中接口的定义、抽象类和抽象方法的定义
