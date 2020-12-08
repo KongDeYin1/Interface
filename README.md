@@ -8,7 +8,7 @@
 2. 掌握Java中接口的定义，熟练掌握接口的定义形式以及接口的实现方法；
 3. 了解异常的使用方法，并在程序中根据输入情况做异常处理；
 
-**二、实验要求
+## 二、实验要求
 
 说明：某学校为了给学生提供勤工俭学机会，也减轻授课教师的部分压力，准许博士研究生参与课程的助教工作。此时，该博士研究生有双重身份：学生和助教教师。
 
@@ -23,12 +23,66 @@
 * 实例化研究生类时，可采用运行时通过main方法的参数args一次性赋值，也可采用Scanner类实现运行时交互式输入
 * 根据输入情况，要在程序中做异常处理。
 
-**三、实验结果
+## 、核心代码
+
+1.构造方法（无参、有参）
+
+public class Graduate {
+				
+			String name;
+			String sex;
+			int  age;
+			float pay;
+			float fee;
+			
+			Graduate(){
+				
+			}
+			
+			
+		public Graduate(String name, String sex, int age ) {
+			this.name=name;
+			this.sex=sex;
+			this.age=age;
+
+
+2.纳税额度的方法
+
+  public void setFee(float fee) {
+			this.fee = fee;
+			System.out.println("年收入为：" + this.fee);
+		}
+		
+		public void getFee(float fee) {
+			this.fee = fee;
+			System.out.println("年收入为：" + this.fee);
+		}
+		public void setPay(float pay) {
+			this.pay = pay * 12;       
+			System.out.println("学费：" + this.pay);
+		}
+		
+		public void getPay(float pay) {
+			this.pay = pay * 12;
+			System.out.println("学费：" + this.pay);
+		}
+		public boolean paytaxes(){     //boolean是java中的布尔型（逻辑型）数据类型
+			if ((this.pay - this.fee) < 5000) {
+				System.out.println("纳税金额为:"+(this.pay -this.fee)*0.03f+"\n");
+				return true;           // true 代表“真”
+			}
+			else {
+				System.out.println("纳税金额为:"+(this.pay -this.fee)*0.03f+"\n");
+			    return false;          //false 代表“假”
+			} 
+		}
+    
+## 、实验结果
 
   ![](https://github.com/KongDeYin1/Interface/blob/main/1.PNG)
   
   
-**四、实验感想
+## 、实验感想
 
 1.通过这次实验掌握Java中接口的定义、抽象类和抽象方法的定义
 
