@@ -25,7 +25,7 @@
 
 **三、实验结果
 
-  https://github.com/KongDeYin1/Interface/blob/main/1.PNG
+  ![](https://github.com/KongDeYin1/Interface/blob/main/1.PNG)
   
   
 **四、实验感想
